@@ -49,6 +49,6 @@ ALTRIMENTI
 //DATA
 const userNumber = Math.floor(Math.random() * (6 - 1 + 1)) + 1 //deve generare un numero per il  giocatore
 const pcNumber = Math.floor(Math.random() * (6 - 1 + 1)) + 1 //deve generare un numero per il computer
-//Math.floor(Math.random() * (MAX - MIN + 1)) + MIN
+
 
 
