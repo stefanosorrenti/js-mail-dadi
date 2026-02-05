@@ -45,11 +45,18 @@ ALTRIMENTI
 
 */
 
-
+//Tutorial
+console.log('Verrà estratto un numero da 1 a 6 per il per i due partecipanti, vince il partecipante con il numero più alto.');
 //DATA
+
 const userNumber = Math.floor(Math.random() * (6 - 1 + 1)) + 1 //deve generare un numero per il  giocatore
 const pcNumber = Math.floor(Math.random() * (6 - 1 + 1)) + 1 //deve generare un numero per il computer
 let notification;
+
+//STRUCTURE 
+console.log(`Il numero del giocatore è: ${userNumber}`);
+console.log(`Il numero del computer è: ${pcNumber}`);
+
 
 
 //SE il numero del giocatore è piu alto
@@ -58,7 +65,7 @@ if (userNumber > pcNumber) {
     console.log(notification);
     
 } else if (pcNumber > userNumber) {
-    notification = 'Ha vinto il computer'
+    notification = 'Ha vinto il computer!'
     console.log(notification);
 
 } else {
