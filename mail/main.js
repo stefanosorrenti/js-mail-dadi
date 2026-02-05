@@ -38,10 +38,12 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 /*
 -creare una whitelist di email
 -domandare all'utente la sua email
-    SE l'email è nella whitelist
-        -notifico l'utente può accedere
-    ALTRIMENTI
-        -notifico l'utente che non può accedere
+-controlo ad uno a uno l'email nella whitelist
+
+    SE trovo l'email è nella whitelist
+        -l'utente puo accedere
+    SE non trovo l'email nella whitelist 
+        -l'utente non può accedere
 
 */
 
@@ -60,4 +62,29 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 
 */
 
+//DATA
+const emailList = ['tiziocaio@gmail.com', 'vincenzochieti@hotmail.it', 'matteotaddone02@libero.com', 'leonoardocirulli99@alice.it', 'lueguniondXD@outlook.it']
+const userMail = prompt('Scrivi la tua email per verificare se sei stato invitato.')
 
+
+
+let invite = 'Non sei invitato.'
+
+
+
+for (i = 0; i < emailList.length; i++) {
+    /* console.log('print', emailList[i]); */
+
+
+    if (userMail === emailList[i]) {
+        /* console.log('ci sei', emailList[i]); */
+        invite = `Sei invitato ${emailList[i]}`
+        
+
+
+}
+
+
+}
+
+console.log(invite);
