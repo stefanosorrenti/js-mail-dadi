@@ -22,3 +22,33 @@ Buon  divertimento! e confermate lettura :babyyoda:
 
 
 */
+
+//HUMAN CODE
+
+
+/*Cosa deve fare il software:
+
+-deve generare un numero per il  giocatore 
+    -usiamo mathrandom
+-deve generare un numero per il computer
+    -usiamo mathrandom
+SE il numero del giocatore è piu alto
+    -valutiamo tramite l'operatore relazionale
+    -stampa 'ha vinto il giocatore
+ALTRIMENTI SE il numero  del computer è più alto
+    -valutiamo tramite l'operatore relazionale
+    -stampa 'ha vinto il computer'
+
+ALTRIMENTI 
+    -Stampa 'non ha vinto nessuno, ricaricare la pagina'
+
+
+*/
+
+
+//DATA
+const userNumber = Math.floor(Math.random() * (6 - 1 + 1)) + 1 //deve generare un numero per il  giocatore
+const pcNumber = Math.floor(Math.random() * (6 - 1 + 1)) + 1 //deve generare un numero per il computer
+//Math.floor(Math.random() * (MAX - MIN + 1)) + MIN
+
+
