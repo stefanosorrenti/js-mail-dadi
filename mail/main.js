@@ -39,12 +39,8 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 -creare una whitelist di email
 -domandare all'utente la sua email
 -controlo ad uno a uno l'email nella whitelist
-
-    SE trovo l'email è nella whitelist
-        -l'utente puo accedere
-    SE non trovo l'email nella whitelist 
-        -l'utente non può accedere
-
+-SE l'email è nella lista
+    -notifico l'utente
 */
 
 //SEMI-CODE
@@ -63,7 +59,11 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 */
 
 //DATA
+
+//creare una whitelist di email
 const emailList = ['tiziocaio@gmail.com', 'vincenzochieti@hotmail.it', 'matteotaddone02@libero.com', 'leonoardocirulli99@alice.it', 'lueguniondXD@outlook.it']
+
+//domandare all'utente la sua email
 const userMail = prompt('Scrivi la tua email per verificare se sei stato invitato.')
 
 
@@ -71,20 +71,22 @@ const userMail = prompt('Scrivi la tua email per verificare se sei stato invitat
 let invite = 'Non sei invitato.'
 
 
-
+//controlo ad uno a uno l'email nella whitelist
 for (i = 0; i < emailList.length; i++) {
     /* console.log('print', emailList[i]); */
 
-
+    //SE l'email è nella lista
     if (userMail === emailList[i]) {
         /* console.log('ci sei', emailList[i]); */
-        invite = `Sei invitato ${emailList[i]}`
-        
+        invite = `Sei invitato ${emailList[i]}` //notifico l'utente
 
-
-}
+    }
 
 
 }
 
 console.log(invite);
+
+/*la variabile va dichiarata come 'non sei inviato' fuori dai blocchi di codice,  
+quando si verificherà la nostra condizione non faremo altro che sovrascriverla, perch+ è una variabile
+con scope globale quindi so farà sovrascrivere da un element odentro un block*/
