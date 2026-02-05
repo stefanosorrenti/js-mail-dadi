@@ -49,6 +49,19 @@ ALTRIMENTI
 //DATA
 const userNumber = Math.floor(Math.random() * (6 - 1 + 1)) + 1 //deve generare un numero per il  giocatore
 const pcNumber = Math.floor(Math.random() * (6 - 1 + 1)) + 1 //deve generare un numero per il computer
+let notification;
 
 
+//SE il numero del giocatore è piu alto
+if (userNumber > pcNumber) {
+    notification = 'Ha vinto il giocatore'
+    console.log(notification);
+    
+} else if (pcNumber > userNumber) {
+    notification = 'Ha vinto il computer'
+    console.log(notification);
 
+} else {
+    notification = 'Non ha vinto nessuno, ricaricare la pagina.'
+    console.log(notification);
+}
