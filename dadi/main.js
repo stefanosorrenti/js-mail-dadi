@@ -59,16 +59,18 @@ console.log(`Il numero del computer è: ${pcNumber}`);
 
 
 
-//SE il numero del giocatore è piu alto
+//SE il numero del giocatore è il piu alto
 if (userNumber > pcNumber) {
-    notification = 'Ha vinto il giocatore'
-    console.log(notification);
-    
-} else if (pcNumber > userNumber) {
-    notification = 'Ha vinto il computer!'
-    console.log(notification);
+    notification = 'Ha vinto il giocatore' 
+    console.log(notification); //stampa 'ha vinto il giocatore
 
+//ALTRIMENTI SE il numero del computer è il più alto
+} else if (pcNumber > userNumber) { 
+    notification = 'Ha vinto il computer!' 
+    console.log(notification); //stampa 'ha vinto il computer'
+
+//ALTRIMENTI 
 } else {
-    notification = 'Non ha vinto nessuno, ricaricare la pagina.'
-    console.log(notification);
+    notification = 'Non ha vinto nessuno, ricaricare la pagina.' 
+    console.log(notification); //Stampa 'non ha vinto nessuno, ricaricare la pagina
 }
